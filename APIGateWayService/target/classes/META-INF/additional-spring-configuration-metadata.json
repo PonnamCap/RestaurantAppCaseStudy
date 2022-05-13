@@ -1,0 +1,52 @@
+{"properties": [
+  {
+    "name": "server.eureka.client",
+    "type": "java.lang.String",
+    "description": "A description for 'server.eureka.client'"
+  },
+  {
+    "name": "server.service-url.cloud.gateway.routes",
+    "type": "java.lang.String",
+    "description": "A description for 'server.service-url.cloud.gateway.routes'"
+  },
+  {
+    "name": "service-url.default-zone",
+    "type": "java.lang.String",
+    "description": "A description for 'service-url.default-zone'"
+  },
+  {
+    "name": "service-url.spring",
+    "type": "java.lang.String",
+    "description": "A description for 'service-url.spring'"
+  },
+  {
+    "name": "service-url.application",
+    "type": "java.lang.String",
+    "description": "A description for 'service-url.application'"
+  },
+  {
+    "name": "service-url.name",
+    "type": "java.lang.String",
+    "description": "A description for 'service-url.name'"
+  },
+  {
+    "name": "service-url.cloud.gateway.routes",
+    "type": "java.lang.String",
+    "description": "A description for 'service-url.cloud.gateway.routes'"
+  },
+  {
+    "name": "eureka.spring",
+    "type": "java.lang.String",
+    "description": "A description for 'eureka.spring'"
+  },
+  {
+    "name": "eureka.application.spring.predicates",
+    "type": "java.lang.String",
+    "description": "A description for 'eureka.application.spring.predicates'"
+  },
+  {
+    "name": "sever.port",
+    "type": "java.lang.String",
+    "description": "A description for 'sever.port'"
+  }
+]}
