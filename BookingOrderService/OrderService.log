@@ -1,0 +1,142 @@
+2022-05-12 10:05:34.153  INFO 13100 --- [restartedMain] com.cg.BookingOrderServiceApplication    : Starting BookingOrderServiceApplication using Java 17.0.2 on DESKTOP-AI6CTK5 with PID 13100 (C:\Users\sai prakash\Documents\workspace-spring-tool-suite-4-4.14.0.RELEASE\BookingOrderService\target\classes started by sai prakash in C:\Users\sai prakash\Documents\workspace-spring-tool-suite-4-4.14.0.RELEASE\BookingOrderService)
+2022-05-12 10:05:34.158  INFO 13100 --- [restartedMain] com.cg.BookingOrderServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-05-12 10:05:34.346  INFO 13100 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-12 10:05:34.349  INFO 13100 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-12 10:05:35.899  INFO 13100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-05-12 10:05:36.323  INFO 13100 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 414 ms. Found 1 MongoDB repository interfaces.
+2022-05-12 10:05:37.007  INFO 13100 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=765c1aa3-49fe-3d6d-87ac-b3fb6bd23736
+2022-05-12 10:05:38.283  INFO 13100 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8087 (http)
+2022-05-12 10:05:38.304  INFO 13100 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-12 10:05:38.305  INFO 13100 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-12 10:05:38.533  INFO 13100 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-12 10:05:38.534  INFO 13100 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4184 ms
+2022-05-12 10:05:39.250  INFO 13100 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=cluster0.qtd46.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-wj7va5-shard-0'}
+2022-05-12 10:05:39.362  INFO 13100 --- [cluster-ClusterId{value='627c8e9bd660c155e28b4876', description='null'}-srv-cluster0.qtd46.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server cluster0-shard-00-02.qtd46.mongodb.net:27017 to client view of cluster
+2022-05-12 10:05:39.451  INFO 13100 --- [cluster-ClusterId{value='627c8e9bd660c155e28b4876', description='null'}-srv-cluster0.qtd46.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server cluster0-shard-00-00.qtd46.mongodb.net:27017 to client view of cluster
+2022-05-12 10:05:39.453  INFO 13100 --- [cluster-ClusterId{value='627c8e9bd660c155e28b4876', description='null'}-srv-cluster0.qtd46.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server cluster0-shard-00-01.qtd46.mongodb.net:27017 to client view of cluster
+2022-05-12 10:05:39.613  WARN 13100 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-12 10:05:39.866  WARN 13100 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-05-12 10:05:40.029  WARN 13100 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-12 10:05:40.371  WARN 13100 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'globalExceptionHandler': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'data.exception.msg' in value "${data.exception.msg}"
+2022-05-12 10:05:40.413  INFO 13100 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-05-12 10:05:40.458  INFO 13100 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-12 10:05:40.542 ERROR 13100 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'globalExceptionHandler': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'data.exception.msg' in value "${data.exception.msg}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.7.jar:2.6.7]
+	at com.cg.BookingOrderServiceApplication.main(BookingOrderServiceApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.7.jar:2.6.7]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'data.exception.msg' in value "${data.exception.msg}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1330) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 22 common frames omitted
+
+2022-05-12 10:11:27.863  INFO 6396 --- [restartedMain] com.cg.BookingOrderServiceApplication    : Starting BookingOrderServiceApplication using Java 17.0.2 on DESKTOP-AI6CTK5 with PID 6396 (C:\Users\sai prakash\Documents\workspace-spring-tool-suite-4-4.14.0.RELEASE\BookingOrderService\target\classes started by sai prakash in C:\Users\sai prakash\Documents\workspace-spring-tool-suite-4-4.14.0.RELEASE\BookingOrderService)
+2022-05-12 10:11:27.867  INFO 6396 --- [restartedMain] com.cg.BookingOrderServiceApplication    : No active profile set, falling back to 1 default profile: "default"
+2022-05-12 10:11:28.161  INFO 6396 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-12 10:11:28.162  INFO 6396 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-12 10:11:31.724  INFO 6396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+2022-05-12 10:11:32.160  INFO 6396 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 426 ms. Found 1 MongoDB repository interfaces.
+2022-05-12 10:11:32.756  INFO 6396 --- [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=91a0fb8f-fd79-37ad-a6ef-ce5aa929b4e2
+2022-05-12 10:11:35.025  INFO 6396 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8087 (http)
+2022-05-12 10:11:35.152  INFO 6396 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-12 10:11:35.157  INFO 6396 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-12 10:11:36.428  INFO 6396 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-12 10:11:36.429  INFO 6396 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8266 ms
+2022-05-12 10:11:37.834  INFO 6396 --- [restartedMain] org.mongodb.driver.cluster               : Cluster created with settings {hosts=[127.0.0.1:27017], srvHost=cluster0.qtd46.mongodb.net, mode=MULTIPLE, requiredClusterType=REPLICA_SET, serverSelectionTimeout='30000 ms', requiredReplicaSetName='atlas-wj7va5-shard-0'}
+2022-05-12 10:11:38.011  INFO 6396 --- [cluster-ClusterId{value='627c90014ab33b3d8b278da7', description='null'}-srv-cluster0.qtd46.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server cluster0-shard-00-02.qtd46.mongodb.net:27017 to client view of cluster
+2022-05-12 10:11:38.162  INFO 6396 --- [cluster-ClusterId{value='627c90014ab33b3d8b278da7', description='null'}-srv-cluster0.qtd46.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server cluster0-shard-00-00.qtd46.mongodb.net:27017 to client view of cluster
+2022-05-12 10:11:38.165  INFO 6396 --- [cluster-ClusterId{value='627c90014ab33b3d8b278da7', description='null'}-srv-cluster0.qtd46.mongodb.net] org.mongodb.driver.cluster               : Adding discovered server cluster0-shard-00-01.qtd46.mongodb.net:27017 to client view of cluster
+2022-05-12 10:11:38.328  WARN 6396 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-12 10:11:38.695  WARN 6396 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-05-12 10:11:38.995  WARN 6396 --- [restartedMain] o.s.data.convert.CustomConversions       : Registering converter from class java.time.LocalDateTime to class org.joda.time.LocalDateTime as reading converter although it doesn't convert from a store-supported type! You might want to check your annotation setup at the converter implementation.
+2022-05-12 10:11:39.628  INFO 6396 --- [cluster-rtt-ClusterId{value='627c90014ab33b3d8b278da7', description='null'}-cluster0-shard-00-00.qtd46.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:6, serverValue:377144}] to cluster0-shard-00-00.qtd46.mongodb.net:27017
+2022-05-12 10:11:39.628  INFO 6396 --- [cluster-ClusterId{value='627c90014ab33b3d8b278da7', description='null'}-cluster0-shard-00-01.qtd46.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:3, serverValue:422237}] to cluster0-shard-00-01.qtd46.mongodb.net:27017
+2022-05-12 10:11:39.628  INFO 6396 --- [cluster-ClusterId{value='627c90014ab33b3d8b278da7', description='null'}-cluster0-shard-00-00.qtd46.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:5, serverValue:377144}] to cluster0-shard-00-00.qtd46.mongodb.net:27017
+2022-05-12 10:11:39.628  INFO 6396 --- [cluster-ClusterId{value='627c90014ab33b3d8b278da7', description='null'}-cluster0-shard-00-02.qtd46.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:1, serverValue:376144}] to cluster0-shard-00-02.qtd46.mongodb.net:27017
+2022-05-12 10:11:39.629  INFO 6396 --- [cluster-rtt-ClusterId{value='627c90014ab33b3d8b278da7', description='null'}-cluster0-shard-00-02.qtd46.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:4, serverValue:376143}] to cluster0-shard-00-02.qtd46.mongodb.net:27017
+2022-05-12 10:11:39.629  INFO 6396 --- [cluster-rtt-ClusterId{value='627c90014ab33b3d8b278da7', description='null'}-cluster0-shard-00-01.qtd46.mongodb.net:27017] org.mongodb.driver.connection            : Opened connection [connectionId{localValue:2, serverValue:422237}] to cluster0-shard-00-01.qtd46.mongodb.net:27017
+2022-05-12 10:11:39.630  INFO 6396 --- [cluster-ClusterId{value='627c90014ab33b3d8b278da7', description='null'}-cluster0-shard-00-00.qtd46.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-00.qtd46.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=599808300, setName='atlas-wj7va5-shard-0', canonicalAddress=cluster0-shard-00-00.qtd46.mongodb.net:27017, hosts=[cluster0-shard-00-02.qtd46.mongodb.net:27017, cluster0-shard-00-00.qtd46.mongodb.net:27017, cluster0-shard-00-01.qtd46.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.qtd46.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=4, topologyVersion=TopologyVersion{processId=6269105a4215d943b95296ed, counter=4}, lastWriteDate=Thu May 12 10:11:39 IST 2022, lastUpdateTimeNanos=60601856762600}
+2022-05-12 10:11:39.630  INFO 6396 --- [cluster-ClusterId{value='627c90014ab33b3d8b278da7', description='null'}-cluster0-shard-00-02.qtd46.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-02.qtd46.mongodb.net:27017, type=REPLICA_SET_SECONDARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=587419100, setName='atlas-wj7va5-shard-0', canonicalAddress=cluster0-shard-00-02.qtd46.mongodb.net:27017, hosts=[cluster0-shard-00-02.qtd46.mongodb.net:27017, cluster0-shard-00-00.qtd46.mongodb.net:27017, cluster0-shard-00-01.qtd46.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.qtd46.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=null, setVersion=4, topologyVersion=TopologyVersion{processId=626914f3ae8d50c2b710637b, counter=3}, lastWriteDate=Thu May 12 10:11:39 IST 2022, lastUpdateTimeNanos=60601857091800}
+2022-05-12 10:11:39.630  INFO 6396 --- [cluster-ClusterId{value='627c90014ab33b3d8b278da7', description='null'}-cluster0-shard-00-01.qtd46.mongodb.net:27017] org.mongodb.driver.cluster               : Monitor thread successfully connected to server with description ServerDescription{address=cluster0-shard-00-01.qtd46.mongodb.net:27017, type=REPLICA_SET_PRIMARY, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=13, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=587547200, setName='atlas-wj7va5-shard-0', canonicalAddress=cluster0-shard-00-01.qtd46.mongodb.net:27017, hosts=[cluster0-shard-00-02.qtd46.mongodb.net:27017, cluster0-shard-00-00.qtd46.mongodb.net:27017, cluster0-shard-00-01.qtd46.mongodb.net:27017], passives=[], arbiters=[], primary='cluster0-shard-00-01.qtd46.mongodb.net:27017', tagSet=TagSet{[Tag{name='nodeType', value='ELECTABLE'}, Tag{name='provider', value='AWS'}, Tag{name='region', value='AP_SOUTH_1'}, Tag{name='workloadType', value='OPERATIONAL'}]}, electionId=7fffffff0000000000000079, setVersion=4, topologyVersion=TopologyVersion{processId=626912632b6fda59953cdf10, counter=6}, lastWriteDate=Thu May 12 10:11:39 IST 2022, lastUpdateTimeNanos=60601856956100}
+2022-05-12 10:11:39.641  INFO 6396 --- [cluster-ClusterId{value='627c90014ab33b3d8b278da7', description='null'}-cluster0-shard-00-01.qtd46.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max election id to 7fffffff0000000000000079 from replica set primary cluster0-shard-00-01.qtd46.mongodb.net:27017
+2022-05-12 10:11:39.642  INFO 6396 --- [cluster-ClusterId{value='627c90014ab33b3d8b278da7', description='null'}-cluster0-shard-00-01.qtd46.mongodb.net:27017] org.mongodb.driver.cluster               : Setting max set version to 4 from replica set primary cluster0-shard-00-01.qtd46.mongodb.net:27017
+2022-05-12 10:11:39.642  INFO 6396 --- [cluster-ClusterId{value='627c90014ab33b3d8b278da7', description='null'}-cluster0-shard-00-01.qtd46.mongodb.net:27017] org.mongodb.driver.cluster               : Discovered replica set primary cluster0-shard-00-01.qtd46.mongodb.net:27017
+2022-05-12 10:11:39.744  WARN 6396 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'globalExceptionHandler': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'data.exception.msg' in value "${data.exception.msg}"
+2022-05-12 10:11:40.149  INFO 6396 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2022-05-12 10:11:40.202  INFO 6396 --- [restartedMain] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-05-12 10:11:40.340 ERROR 6396 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'globalExceptionHandler': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'data.exception.msg' in value "${data.exception.msg}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:953) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:740) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:415) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1312) ~[spring-boot-2.6.7.jar:2.6.7]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1301) ~[spring-boot-2.6.7.jar:2.6.7]
+	at com.cg.BookingOrderServiceApplication.main(BookingOrderServiceApplication.java:12) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.6.7.jar:2.6.7]
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'data.exception.msg' in value "${data.exception.msg}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:180) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210) ~[spring-core-5.3.19.jar:5.3.19]
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:191) ~[spring-context-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:936) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1330) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1309) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.19.jar:5.3.19]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.19.jar:5.3.19]
+	... 22 common frames omitted
+
