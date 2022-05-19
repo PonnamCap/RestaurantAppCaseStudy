@@ -36,26 +36,26 @@ public class RestaurantController {
 
 		
 		
-	
+	//adds the restaurant
 	@PostMapping("/restaurant")
 	public ResponseEntity<Restaurant>addRestaurant(@RequestBody Restaurant restaurant) throws RestaurantAlreadyExists {
 		Restaurant savedrestaurant = restaurantServ.addRestaurant(restaurant);
 		return new ResponseEntity<>(savedrestaurant, HttpStatus.CREATED);
 		
 	}
-	
+	//gets all the restaurant 
 	@GetMapping("/restaurants")
 	public ResponseEntity<List<Restaurant>> getAllRestaurants() {
 		return new ResponseEntity<List<Restaurant>>((List<Restaurant>)restaurantServ.getAllRestaurants(),HttpStatus.OK);
 		
 	}
-	
+	//updates the restaurant by given id
 	@PutMapping("/restaurant/{restaurantId}")
 	public Restaurant 
 	updateRestaurant(@RequestBody Restaurant restaurant, @PathVariable("restaurantId") String restaurantId) throws RestaurantIdNotFound {
 		return restaurantServ.updateRestaurant(restaurant,restaurantId);
 	}
-	
+	//delets the restaurant by given id
 	@DeleteMapping("/restaurant/{restaurantId}")
 	public ResponseEntity<Void> deleteEmployeeById(@PathVariable String restaurantId) throws RestaurantIdNotFound   {
 		restaurantServ.deleteRestaurantByrestaurantId(restaurantId);
