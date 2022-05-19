@@ -26,34 +26,38 @@ public class ContactController {
 	
 	@Autowired
 	private ContactRepository contactrepository;
-	
+	//adds contact
 	@PostMapping("/addContact")
 	public String saveContact(@RequestBody Contact contact) {
     contactrepository.save(contact);
 	return "Added contact with id :  " + contact.getId();
 }
-	
+	//finds the contct by given id
 	@GetMapping("/findAllContacts")
 	public List<Contact> getContacts(){
 		return contactrepository.findAll();
 		
 	}
+	//finds the contact by given id
 	@GetMapping("/findAllContacts/{id}")
 	public Optional<Contact> getContact(@PathVariable String id){
 		return contactrepository.findById(id);
 	}
+	//updates the contact by given id
 	@PutMapping("/update/{id}")
 	public Contact updateContact(@PathVariable("id") String id,@RequestBody Contact contact ) {
 		contact.setId(id);
 		contactrepository.save(contact);
 		return contact;
 	}
+	//deletes the contact by given id
 	 @DeleteMapping("/delcontact/{id}")
 		public String deleteContact (@PathVariable String id) {
 			contactrepository.deleteById(id);
 			return "Contact deleted with id : "+id;
 		}
 	 
+	//gets the contact
 	 @GetMapping("/Contact")
 		public Contact getContactData() {
 		 Contact ct = new Contact ("1","Sai","7680089900" );
