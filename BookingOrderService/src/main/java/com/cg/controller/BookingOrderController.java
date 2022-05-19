@@ -34,7 +34,7 @@ public class BookingOrderController {
 	@Autowired
 	private OrderService orderServ;
 	
-	
+	//adding an order 
 	@PostMapping("/addOrder")
 	public ResponseEntity<BookingOrder>addBookingOrder(@RequestBody BookingOrder order) throws OrderAlreadyExists {
 		BookingOrder savedorder = orderServ.addBookingOrder(order);
@@ -48,21 +48,26 @@ public class BookingOrderController {
 	bookrepository.save(book);
 	return "Booked item with id :  " + book.getId();
     }*/
+	
+	//returns the order by given id
 	@GetMapping("/{id}")
 	public Optional<BookingOrder> getBook(@PathVariable String id){
 		return bookrepository.findById(id);
 	}
+	//returns the order by given id
 	@GetMapping("/findallOrders")
     public List<BookingOrder> getBookingOrder(){
         return bookrepository.findAll();
        
     }
+	//updates the order by given id
 	@PutMapping("/update/{id}")
 	public BookingOrder 
 	updateBookingOrder(@PathVariable("id") String id,@RequestBody BookingOrder order ) throws OrderIdNotFound {
 		return orderServ.updateBookingOrder(order,id);
 	}
-		
+	
+	//deletes the order by given id
 	 @DeleteMapping("/del/{id}")
 	 public ResponseEntity<Void> deleteEmployeeById(@PathVariable String id) throws OrderIdNotFound   {
 		 orderServ.deleteBookingOrderByid(id);
